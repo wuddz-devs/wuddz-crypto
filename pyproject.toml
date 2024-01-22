@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wuddz_crypto"
+version = "1.0.1"
+description = "Multi Blockchain Cryptocurrency App, Create HDWallets, Make Transactions & Check Balances."
+readme = "README.md"
+authors = [
+  { name="Wuddz-Devs", email="wuddz_devs@protonmail.com" },
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+keywords = ["crypto", "btc", "bitcoin", "tronics", "trx", "wallet", "transfer", "deposit", "bit", "tronpy"]
+classifiers = [
+		'License :: OSI Approved :: MIT License',
+		'Programming Language :: Python',
+		'Programming Language :: Python :: 3.7',
+		'Programming Language :: Python :: 3.8',
+		'Programming Language :: Python :: 3.9',
+		'Programming Language :: Python :: 3.10',
+]
+
+dependencies = [
+       'bit',
+       'blockcypher',
+       'cryptography',
+       'hdwallet',
+       'pycoingecko',
+       'Requests',
+       'tronpy',
+]
+
+[project.scripts]
+wudz-crypto = "wuddz_crypto.main:menu"
+
+[project.urls]
+"Homepage" = "https://github.com/wuddz-devs/wuddz-crypto"
